@@ -1,0 +1,30 @@
+web:
+  build: .
+  ports:
+   - "8080:8080"
+  volumes:
+   - /Users/me/docker/helloyou:/apps/helloyou
+  links:
+   - mysqldb:mysql
+   - ddagent:ddagent
+ddagent:
+  build: .
+  dockerfile: dd-agent.Dockerfile
+  links:
+   - mysqldb:mysql
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
+  environment:
+    - API_KEY=XXXX
+  ports:
+    - "8125:8125/udp"
+    - "17123:17123"
+mysqldb:
+  build: .
+  dockerfile: mysqldb.Dockerfile
+  environment:
+    - MYSQL_ROOT_PASSWORD=feefifofum
+    - MYSQL_USER=guestbook
+    - MYSQL_PASSWORD=guestbook
+    - MYSQL_DATABASE=guestbook

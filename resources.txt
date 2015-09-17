@@ -1,0 +1,11 @@
+https://github.com/DataDog/docker-dd-agent
+http://docs.datadoghq.com/api/
+http://docs.datadoghq.com/guides/metrics/
+
+https://github.com/DataDog/docker-dd-agent
+https://github.com/DataDog/dd-agent/wiki/Proxy-Configuration#using-the-agent-as-a-proxy
+https://github.com/DataDog/datadogpy
+http://datadogpy.readthedocs.org/en/latest/
+https://github.com/DataDog/dd-agent/wiki/Proxy-Configuration
+https://www.datadoghq.com/blog/docker-performance-datadog/
+https://gist.github.com/sjenriquez/203d0c1ddb0d8b6106a1
