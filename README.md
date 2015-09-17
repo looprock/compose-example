@@ -17,6 +17,9 @@ The docker compose file, putting it all together
 # Dockerfile
 This is the dockerfile used by the web container
 
+# helloyou/*
+The helloyou guestbook app
+
 # mysqldb.Dockerfile
 This is the dockerfile used by the mysql container
 
