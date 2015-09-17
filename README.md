@@ -1,5 +1,5 @@
 # compose-example
-docker-compose setup example
+docker-compose setup example. When configured this brings up an app server, database, and active datadog agent under docker-toolkit using docker-compose.
 
 # conf.d/mysql.yaml
 This is used via ADD to the datadog agent container for monitoring mysql. Password should match the one listed in datadog.sql
